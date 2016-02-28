@@ -1,12 +1,13 @@
-{% block head %}
-<script type="text/javascript" src="{{url_for('static',filename='jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{url_for('static',filename='func.js')}}"></script>
-<link rel=stylesheet text="text/css" href="{{url_for('static',filename='style.css')}}">
-{% endblock %}
-{% block page_content %}
+<HTML>
+<HEAD>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="func.js"></script>
+<link rel=stylesheet text="text/css" href="style.css">
+</HEAD>
+<BODY>
 <!-- Hack Hamp with gradient -->
 <div id=first-div style=text-align:center>
-<br><img src={{url_for('static',filename='masshelp150.png')}}>
+<br><img src='masshelp150.png'>
 <br>
 <br>
 </div>
@@ -97,4 +98,5 @@ From time to time, everyone needs a helping hand.  Here at MassHelp, we are dedi
 		</div>  <!--end .accordion-->
 	</div>
 
-{% endblock %}
+</BODY>
+</HTML>
