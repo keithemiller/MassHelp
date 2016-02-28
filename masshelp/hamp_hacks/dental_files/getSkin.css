@@ -1,0 +1,343 @@
+/*
+ * We should be using mnemonics for structure and color. Meanwhile, we can at least
+ * use non-perceptibly different colors and document them at the top of each sheet. 
+ * That way you can perform search and replace on the entire document, limiting the
+ * changes to specific structural elements (e.g, there are 3 minute variations with
+ * color DAD4EX, whose only purpose is to make it unique). 
+ *  
+ * Segment Heading: 				F4F0F7
+ * Segment Border: 					DAD4E0
+ * Outer Table Heading:				DAD4E1
+ * Inner Table Heading:				EEEEEE  
+ * Inner Table Bottom Border:		DAD4E2
+ * Inner Table Cell Right Border:	DAD4E3
+ * Modal Dialog Outer Border:		666666 
+ * Modal Dialog Middle Border:		BBBBBB
+ * Modal Dialog Inner Border:		DDDDDD
+ * Member Status:					AAAAAA
+ * Carrier search filter:			DFDFDF
+ * Member eligibility background:	DCDCDC
+ * Carrier search filter border: 	444444
+ */
+ 
+.hidden
+{
+	display: none;
+}
+
+.widget
+{
+	display: inline;
+}
+.label, .caption 
+{
+	display: block;
+	width: 8em;
+}
+label
+{
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.disabled
+{
+	color: #B0B0B0;
+}
+.container 
+{
+	margin-top: 4px; 
+}
+
+.container > .segment
+{
+	padding: 0px;
+	border: 1px solid #FAA61A; 
+}
+
+.segment > .heading
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #636163;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: #F0F0F0;
+}
+
+.segment > .content
+{
+	display: block;
+}
+	
+.panel .caption
+{
+	text-align: right;
+}	
+
+.panel td
+{
+	text-align: left;
+	vertical-align: middle;
+}
+.grid thead th
+{
+	background-color: #DDDDDD;
+}
+.content > .box
+{
+ 	margin: 0px;
+ 	padding: 0px;
+ 	
+}
+
+
+.content > .box > td
+{
+ 	margin: 0px;
+ 	padding: 0px;
+}
+
+.content > .box > fieldset
+{
+	padding: 0px;
+	margin: -8px 0px 0px 0px;
+}
+
+legend {
+	margin-top: -6px;
+}
+/*
+ * Block elements are shrink-to-fit but floating elements have no effect on
+ * the computed dimensions. To keep floats wrapped by the container, drop a
+ * block at the end that clears floats. That is the official W3C solution. 
+ */ 
+.segment > .anchor
+{
+	clear: both;
+}
+
+/*
+ * Fieldsets have a natural top margin, we need a bottom margin so the last
+ * fieldset is not jammed up against the bottom of its content block. Add a
+ * div with this class to accomplish that. 
+ */
+.terminate_content
+{
+	clear: both;
+	height: 1px;
+}
+.panel
+{
+	margin: 0px 2px 2px 0px;
+}
+.panel td
+{
+	padding: 1px;
+	margin: 0px;
+	white-space: nowrap;
+}
+
+.normal { white-space: nowrap;}
+
+/***********************************************/
+.resultstitle {
+	margin-top: 0px;
+}
+
+.grid, .results, .grid .grid
+{
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse; 
+}
+
+.grid .grid
+ {
+ 	font-size: 1em;
+ }
+ 
+table.grid thead th 
+{
+	text-align: left;
+	background-color: #DDDDDD; 
+	padding: 1px;
+}
+
+table.grid td
+{
+	white-space: nowrap;
+	padding: 1px;
+}
+
+table.grid.nested
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EEEEEE; 
+}
+
+table.grid.nested thead th 
+{
+	background-color: #EEEEEE;
+	padding: 1px;
+}
+
+table.grid.nested td 
+{
+	white-space: nowrap;
+	padding: 1px;
+}
+
+/***********************************************/
+
+
+#button_panel
+{
+	text-align: center;
+}
+
+#error_summary
+{
+	padding: 1em;
+	text-align: center;
+}
+
+#search_results
+{
+	clear: both;
+}
+
+.serious_error, .warning_error
+{
+	cursor: pointer;
+}
+
+.mini_button
+{
+	font-size: 8pt;
+}
+
+.fixed_width_button 
+{
+	font-size: 8pt;
+	width:45px;
+	text-align:center;	
+}
+
+#error_summary_container
+{
+	color: #FF0000;
+	border: none;
+	text-align: center;
+}
+
+#member_service_history
+{
+	width: 17em;
+}
+
+select.wide
+{
+	width:21.5em;
+}
+
+input.wide
+{
+	width: 15em;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.flag 
+{
+	font-weight: bold;
+	color: red;
+}
+
+#member_status
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+#coverage_type_desc
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+#modal_mask 
+{
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: none;  
+	position: absolute;  
+	background-color: #000;
+}  
+
+#modal_dialog_container 
+{
+	z-index: 101;
+	display: none;
+	position: absolute;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #666666;
+}	
+
+#modal_dialog_border /* inner border purely for decorative effect */
+{
+	border-width: 2px;
+	border-style: solid;
+	border-color: #BBBBBB;
+} 
+
+#modal_dialog_content
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DDDDDD;
+} 
+
+#carrier_search_container
+{
+	width: 100%;
+	display: none;
+	background-color: #DFDFDF;	
+}
+
+#carrier_search_filter
+{
+	text-align: left;
+	padding-bottom: 8px;
+}
+
+#carrier_search_results
+{
+	height: 12em;
+	overflow: auto;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #444444;	
+}
+
+#member_search_container
+{
+	width: 100%;
+	display: none;
+}
+
+#service_history_container
+{
+	width: 100%;
+	height: 8em;
+	display: none;
+	overflow: scroll;
+	background-color: #DCDCDC;
+}

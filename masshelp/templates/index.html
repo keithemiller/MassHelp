@@ -1,0 +1,100 @@
+{% block head %}
+<script type="text/javascript" src="{{url_for('static',filename='jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static',filename='func.js')}}"></script>
+<link rel=stylesheet text="text/css" href="{{url_for('static',filename='style.css')}}">
+{% endblock %}
+{% block page_content %}
+<!-- Hack Hamp with gradient -->
+<div id=first-div style=text-align:center>
+<br><img src={{url_for('static',filename='masshelp150.png')}}>
+<br>
+<br>
+</div>
+<p>
+
+<div class=nav-bar>
+	<button type=button id="nutrition" class=nav-bar-options>Nutrition</button>
+	<button type=button id="legal" class=nav-bar-options>Legal</button>
+	<button type=button id="health" class=nav-bar-options>Health</button>
+</div>
+<br>
+<br>
+<div style=text-align:center>
+<h3 text-align:center>
+From time to time, everyone needs a helping hand.  Here at MassHelp, we are dedicated to connecting people with the help they need.  From medical and behavioral health providers to legal assistance we are here as a resource to connect you to the help you need to get back on your feet.
+</h3></div>
+	<div class="main" style=margin-top:30x>
+		<div class="accordion">
+			<div class="hide" id="nutrition1" style=width:100%>
+			<table style=width:100%>
+			<tr>
+			<td>
+				<a class="accordion-section-title" href="#accordion-1">Food Banks</a>
+				<div id="accordion-1" class="accordion-section-content">
+					<p>Find a food bank in your area</p><br>
+					<button type=button class=button-go onclick="location.href='http://www.foodpantries.org/st/massachusetts';">Go</button>
+					
+				<div>
+				</div>
+				</div><!--end .accordion-section-content-->
+			</td>
+			<td>
+				<a class="accordion-section-title" href="#accordion-2">SNAP Application</a>
+				<div id="accordion-2" class="accordion-section-content">
+					<p>View requirements and Apply for SNAP Benefits</p>
+					<button type=button class=button-go onclick="location.href='https://hhsvgapps01.hhs.state.ma.us/ierhome/LandingPage.do?method=displayConsumerHomePage&pageSwitch=HOME';">Go</button>
+				</div><!--end .accordion-section-content-->
+			</td>
+			</tr>
+			</table> 			
+			</div>  <!--end .accordion-section-->
+			<div class="hide" id="health1">
+		<table style=width:100%>
+		<tr>
+		<td>
+				<a class="accordion-section-title" href="#accordion-7">Dental</a>
+				<div id="accordion-7" class="accordion-section-content">
+					<p>View Dental Providers who accept MassHealth</p>
+
+					<button type=button class=button-go onclick="location.href='https://onlineservices.masshealth-dental.net/Router.jsp?component=Main&source=Logon&action=ProviderDirectory2';">Go!</button>
+<div>
+{{ message }}
+</div>
+				</div><!--end .accordion-section-content-->
+		</td>
+		<td>
+				<a class="accordion-section-title" href="#accordion-4">Behavioral</a>
+				<div id="accordion-4" class="accordion-section-content">
+					<p>View Mental Health and Substance Abuse health providers</p>
+					<button type=button class=button-go onclick="location.href='https://www.masspartnership.com/member/FindBHProvider.aspx';">Go!</button>				
+	</div><!--end .accordion-section-content-->
+		</td>
+		<td>
+				<a class="accordion-section-title" href="#accordion-5">Primary Care</a>
+				<div id="accordion-5" class="accordion-section-content">
+					<p>View Primary Medical Providers who accept MassHealth</p><br>
+					<button type=button class=button-go onclick="location.href='http://profiles.ehs.state.ma.us/Profiles/Pages/FindAPhysician.aspx';">Go!</button>
+				</div><!--end .accordion-section-content-->
+		</td>
+		</tr>
+		</table>
+			</div><!--end .accordion-section-->
+
+			<div class="hide" id="legal1" style=position:relative>
+		<table style=width:100%>
+		<td>
+		<a class="accordion-section-title" href="#accordion-6" style=position:relative>Legal</a>
+				<div id="accordion-6" class="accordion-section-content">
+					<p>Find free legal services across numerous legal specialties</p>
+					<br>
+					<button type=button class=button-go onclick="location.href='https://apps.americanbar.org/legalservices/probono/directory.html';">Go!</button>
+				</div><!--end .accordion-section-content-->
+			</div><!--end .accordion-section-->
+		</td>
+		</table>
+
+			
+		</div>  <!--end .accordion-->
+	</div>
+
+{% endblock %}

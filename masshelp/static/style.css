@@ -1,0 +1,148 @@
+/*------------------------------------*\
+-------- Page Styles: Accordion
+\*------------------------------------*/
+#first-div{
+	background:black;
+	background:webkit-radial-gradient(#600 35%,#fbfbfb 70%));
+	background:-o-radial-gradient(#600 35%,#fbfbfb 70%);
+	background:moz-radial-gradient(#600 35%,#fbfbfb 70%);
+	background:radial-gradient(#600 35%,#fbfbfb 70%);
+	border-radius:10px;
+
+}
+
+.accordion-section-title:focus{
+	box-shadow:0px 0px 20px 7px #333;
+}
+  
+
+.button-go{
+	height:50px;
+	width:75px;
+	font-size:24px;
+	background:black;
+	background:webkit-linear-gradient(#f7f7f7,#e3e3e3));
+	background:-o-linear-gradient(#f7f7f7,#e3e3e3);
+	background:moz-linear-gradient(#f7f7f7,#e3e3e3);
+	background:linear-gradient(#f7f7f7,#e3e3e3);
+	border-radius:10px;
+}
+
+
+body {
+	z-index:0;
+	background:#fbfbfb;
+}
+
+table{
+	text-align:center;
+}
+
+
+.hide{
+	display:none;
+	background:#fff;
+}
+
+.show{
+	display:block;
+	/*background:#f7f7f7;*/
+}
+
+.accordion {
+	overflow:hidden;
+	text-align:center; !important
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+	text-align:center;
+	width:150px;
+	height:150px;
+	display:inline-block;
+	line-height:6;
+/*non-gradient supported browsers*/
+	background:black;
+/*double vertical gradient: charcoal->black*/
+	background:webkit-radial-gradient(#333 30%,#111));
+	background:-o-radial-gradient(#333 30%,#111);
+	background:moz-radial-gradient(#333 30%,#111);
+	background:radial-gradient(#333 30%,#111);
+	transition:all linear 1s;
+	/* Type */
+	font-size:18pt;
+	color:#fff;
+	border-radius:100%;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	/* Type */
+	text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	display:none;
+}
+
+
+
+#health1 td{
+	width:33%;
+	height:400px;
+}
+
+#nutrition1 td{
+	width:50%;
+	height:400px;
+	}
+#legal1 td{
+	height:400px;
+}
+
+
+/*----- Nav Bar -----*/
+.nav-bar{
+	width:100%;
+/*non-gradient supported browsers*/
+	background:black;
+/*double vertical gradient: charcoal->black*/
+	background:webkit-linear-gradient(#282828,#111);
+	background:-o-linear-gradient(#282828,#111);
+	background:moz-linear-gradient(#282828,#111);
+	background:linear-gradient(#282828,#111);
+	height:76px;
+	text-align:center;
+	border-radius:10px;
+}
+
+.nav-bar-options{
+	position:relative;
+	width:200px;
+	height:50px;
+	top:13px;
+	background:transparent;
+	border:0px;
+	cursor:pointer;
+	outline:0;
+	color:#fff;
+	font-size:28px;
+	font-family:"Arial",sans-serif;
+	font-style:italic;
+}
+
+/* ------- Input fields ---*/
+input{
+	border-radius:4px;
+	background:#f9f9f9;
+}
+
+#sub{
+	height:35px;
+	width:80px;
+	
+}

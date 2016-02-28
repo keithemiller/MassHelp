@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+		
+        <title>Find A Dentist</title>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<meta http-equiv="content-language" content="en">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<script src="dental_files/ga.js" async="" type="text/javascript"></script><script language="JavaScript" type="text/javascript" src="dental_files/date_picker.js"></script>
+        
+		<script language="JavaScript" type="text/javascript" src="dental_files/jquery-1.js"></script>
+		<script language="JavaScript" type="text/javascript" src="dental_files/jquery-migrate-1.js"></script>
+        <script language="JavaScript" type="text/javascript" src="dental_files/GlobalScripts.js"></script></head><body style="background-color: #ffffff;" id="simpleHeader"><div id="tooltip" style="visibility:hidden;width:;background-color:"></div>
+        		
+		<script language="JavaScript" type="text/javascript" src="dental_files/jquery.js"></script>
+	
+		
+		<script language="JavaScript" type="text/javascript" src="dental_files/ServiceSupport.js"></script>
+		<script language="JavaScript" type="text/javascript" src="dental_files/json2.js"></script>
+	
+		
+		<script language="JavaScript" type="text/javascript" src="dental_files/ClientToolkit.js"></script>
+		<script language="JavaScript" type="text/javascript" src="dental_files/Bean.js"></script>
+
+		<script language="JavaScript" type="text/javascript" src="dental_files/GlobalEventHandlers.js"></script>
+
+		         
+		
+		<link href="dental_files/getSkin.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="dental_files/getSkin_003.css" rel="stylesheet" type="text/css" media="screen">
+		<link href="dental_files/getSkin_002.css" rel="stylesheet" type="text/css" media="screen">
+		<script language="JavaScript" type="text/javascript">
+		
+			securityToken = "null";
+			
+			/* Link used as a submit button  */
+			function linkSubmit(actionValue, target) {
+				appendCSRFToken("IspectrumForm");
+			    if(target && target!="")
+			    {
+					document.forms['IspectrumForm'].action.value = actionValue;
+					timeOut1 = setTimeout("document.forms['IspectrumForm'].target = '"+target+"';",200);
+					timeOut2 = setTimeout("document.forms['IspectrumForm'].submit();",200);
+					timeOut3 = setTimeout("document.forms['IspectrumForm'].target = '';",200);
+					timeOut4 = setTimeout("document.forms['IspectrumForm'].action.value = '';",200);
+				}
+				else
+				{
+					document.forms["IspectrumForm"].action.value = actionValue;
+					document.forms["IspectrumForm"].submit();
+				}
+			}
+		</script>
+				
+		
+		<script type="text/javascript"> 
+		   var trackingID = 'UA-17253606-7';
+           var _gaq = _gaq || []; 
+           _gaq.push(['_setAccount', trackingID]); 
+           _gaq.push(['_trackPageview']); 
+
+          (function() { 
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+          })(); 
+
+        </script>
+		
+	
+	
+			<div align="center">
+					<div class="headerTop headerWidth">
+		<span>Health and Human Services</span>
+		<a style="float:right;" href="http://www.mass.gov/portal/">
+			<img src="dental_files/getSkin.jpeg" alt="" border="0">
+		</a>
+	</div>
+	<div class="headerBottom headerWidth">
+		<span>
+			<a href="https://masshealth-dental.net/ProviderServices/Support/ContactUs.aspx" style="margin-right:48px;">Contact Us</a>
+			<a href="https://onlineservices.masshealth-dental.net/Router.jsp?component=Main&amp;source=Logon&amp;action=ProviderDirectory2">Find A Dentist</a>
+			<a href="http://www.mass.gov/portal/">Mass.gov</a>
+		</span>
+	</div>
+				<table class="headerWidth" border="0" cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td>
+							<br><br>		
+
+
+<script type="text/javascript" src="dental_files/ToolboxService.js"></script>
+<script type="text/javascript" src="dental_files/ProviderSearch2Service.js"></script>
+<script type="text/javascript" src="dental_files/ProviderSearch2.js"></script>
+
+
+<style type="text/css">
+	td{
+		font-size: 1.1em;
+	}
+	
+	legend{
+		font-size: 1.2em;
+	}
+</style>
+
+<script>
+var memberSearchContext =
+{
+    policyBenefitOnlyMode: new Boolean(true), //To populate and render policyBenefit information only 
+    language: "english" //To determine English vs Spanish rendering and behavior
+};
+
+
+var userTier = '';
+var userProviderId = '';
+
+function isProviderUser()
+{
+	if( (userTier != null && userTier.length > 0) 
+		|| (userProviderId != null && userProviderId.length > 0) ) 	
+	{
+		return true;
+	}
+	return false;
+}
+</script>
+
+<form action="/Router.jsp" method="post" name="IspectrumForm">
+	<input name="source" value="ProviderSearch2" type="hidden">
+	<input name="component" value="ProviderSearch" type="hidden">
+	<input name="action" value="" type="hidden">
+	<input name="localize" value="" type="hidden">
+
+	<h1>Find A Dentist</h1>
+
+	<table class="pcontenttableborder" cellspacing="0" width="100%"><tbody><tr><td>To
+ search for a dentist, please choose a State and a Plan. Then you must 
+choose to Search by Distance or by Area. (This is under the section 
+called 'Enter Your Geographic Area')</td></tr></tbody></table>
+	
+
+	
+		<div style="text-align:right">
+			 
+
+
+
+<script>
+
+	function changeLocalePreference(locale) 
+	{
+		$('[name=locale]').val(locale);	// assign a value to the localization marker
+		linkSubmit('ChangeLocale');			// submit form
+	}
+</script>
+
+<span style="vertical-align:top"><input checked="checked" name="locale" id="locale_en" value="en" onclick="changeLocalePreference('en')" type="radio"></span><span style="font-size: 1em; vertical-align: middle;">English&nbsp;</span>
+<span style="vertical-align:top"><input name="locale" id="locale_es" value="es" onclick="changeLocalePreference('es')" type="radio"></span><span style="font-size: 1em; vertical-align: middle;">Español&nbsp;&nbsp;&nbsp;</span>
+ 
+		</div>
+	
+
+	
+
+<script type="text/javascript" src="dental_files/ToolboxService.js"></script>
+<script type="text/javascript" src="dental_files/SuperGroupSearchService.js"></script>
+<script type="text/javascript" src="dental_files/SuperGroupSearch.js"></script>
+
+<span class="serious_error hidden" style="vertical-align: middle;"><img src="dental_files/SeriousErrorArrow.gif" title="This field is required to continue" alt=""></span>
+<span class="warning_error hidden" style="vertical-align: middle;"><img src="dental_files/WarningErrorArrow.gif" title="This field is required" alt=""></span>
+
+<!-- Piggyback on parent component's pageBean to register fields -->
+
+
+
+<div id="modal_mask" tabindex="-1"></div>
+<div id="modal_dialog_container">
+	<div id="modal_dialog_border">
+		<div id="modal_dialog_content"></div>
+	</div>
+</div>
+
+<fieldset id="superGroup_panel"><legend><span title="PB_GROUP, SECTION_STATE_PB_GROUP"><label for="PB_GROUPXSECTION_STATE_PB_GROUP">Select a State and Health Plan Group</label></span></legend>  
+	<table class="panel" cellspacing="0">
+		<tbody><tr>
+			<td><span title="PB_GROUP, LOCATION"><label for="PB_GROUPXLOCATION">State</label></span><acronym title="This field is required">*</acronym> </td>
+			<td><select name="PB_GROUPXLOCATION" class="widget" id="PB_GROUPXLOCATION"><option value="none">&nbsp;</option><option value="MA" selected="selected">MA</option></select><input name=":PB_GROUPXLOCATION:required_edit::" type="hidden"></td>
+		</tr>
+		<tr>
+			<td><span title="PB_GROUP, PB_GROUP_ID"><label for="PB_GROUPXPB_GROUP_ID">Plan</label></span><acronym title="This field is required">*</acronym> </td>
+			<td><select name="PB_GROUPXPB_GROUP_ID" class="widget" id="PB_GROUPXPB_GROUP_ID"><option selected="selected" value="1">MassHealth - Medicaid</option></select></td>
+		</tr>
+		<tr>
+            <td><span title="PROV_ACCEPTING_PATIENT, ACCEPTING_PATIENT"><label for="PROV_ACCEPTING_PATIENTXACCEPTING_PATIENT">Accepting Patient</label></span></td>
+            <td><select name="PROV_ACCEPTING_PATIENTXACCEPTING_PATIENT" class="widget" id="PROV_ACCEPTING_PATIENTXACCEPTING_PATIENT"><option value=""></option><option value="1">Accepts Existing Patients Only</option><option selected="selected" value="0">Accepting New and Existing Patients</option></select></td>
+		</tr>
+	</tbody></table>		
+</fieldset>
+
+
+	<br>
+	<span id="memberPanelHelpText"><table class="pcontenttableborder" cellspacing="0" width="100%"><tbody><tr><td>If
+ you do not know what Plan to choose, please enter the Member's DOB 
+&amp; Member ID or Member's name in the section below in order to find 
+the plan the Member participates in.</td></tr></tbody></table></span>
+	
+
+<script type="text/javascript" src="dental_files/ToolboxService.js"></script>
+<script type="text/javascript" src="dental_files/MemberSearchService.js"></script>
+<script type="text/javascript" src="dental_files/MemberSearch.js"></script>
+
+<span class="serious_error hidden" style="vertical-align: middle;"><img src="dental_files/SeriousErrorArrow.gif" title="This field is required to continue" alt=""></span>
+<span class="warning_error hidden" style="vertical-align: middle;"><img src="dental_files/WarningErrorArrow.gif" title="This field is required" alt=""></span>
+
+<!-- Piggyback on parent component's pageBean to register fields -->
+
+
+<input name="eligibilityStatusActive" id="eligibilityStatusActive" value="Eligible" type="hidden">
+<input name="eligibilityStatusInEligibile" id="eligibilityStatusInEligibile" value="Not Eligible" type="hidden">
+<input name="eligibilityStatusNotFound" id="eligibilityStatusNotFound" value="No Dental Coverage" type="hidden">
+
+<div id="member_search_container">
+	<table class="grid">  
+		<thead class="member_table_header">
+			<tr>
+				<th>&nbsp;</th>										
+				<th class="fullView">Last Name</th>
+				<th class="fullView">First Name</th>
+				<th class="fullView">Member ID</th>
+				<th class="fullView">Address</th>
+				<th>Product</th>
+			</tr>
+		</thead>
+		<tbody class="member_table_body">
+			<tr class="member_table_entry">
+				<td>&nbsp;<input class="member_search_select mini_button" id="member_table_select_0" value="select" type="submit"></td>										
+				<td class="msr_last fullView"></td>
+				<td class="msr_first fullView"></td>
+				<td class="msr_key fullView"></td>
+				<td class="msr_address fullView"></td>
+				<td class="msr_product"></td>										
+			</tr>
+		</tbody>
+	</table>	
+</div>
+
+
+<div id="modal_mask" tabindex="-1"></div>
+<div id="modal_dialog_container">
+	<div id="modal_dialog_border">
+		<div id="modal_dialog_content"></div>
+	</div>
+</div>
+
+
+<input id="multipleMemberResultsMsg" value="Multiple potential members found. Please add more information and search again." type="hidden">
+<input id="searchCriteriaMsg" value="Required search information: Member DOB with Member ID or Member name" type="hidden">
+<input name="serviceDateMessage" id="serviceDateMessage" value="DOB should be not greater than the Service date." type="hidden">
+
+
+<fieldset id="member_eligibility_panel">
+	<legend id="member_eligibility_legend" class="searchtitle_expand mbr_search_title searchtitle_collapse">
+		<span id="member_eligibility_legend_title">
+			<span title="CLAIM_SUBSCRIBER, SECTION_MEMBER_SEARCH"><label for="CLAIM_SUBSCRIBERXSECTION_MEMBER_SEARCH">Search for a Member</label></span>
+		</span>
+	 	<span id="member_status"></span> 
+	</legend>  
+	<div style="display: none;" class="toggle_container mbr_srch_toggle_container">
+
+	
+	
+		
+	
+
+	<div id="mbrSrchPersonalization"><table class="pcontenttableborder" cellspacing="0" width="100%"><tbody><tr><td>By
+ providing this information it will ensure that we only show dentists 
+that take the Member's plan. You will be able to search for a dentist 
+once we know what dental plan the Member has.</td></tr></tbody></table></div>
+		
+				<table class="panel" cellspacing="0">
+		<tbody><tr>
+			<td style="text-align:right;"><span title="CLAIM_SUBSCRIBER, SUBSCRIBER_DOB"><label for="CLAIM_SUBSCRIBERXSUBSCRIBER_DOB">DOB</label></span><acronym title="This field is required">*</acronym> </td>
+			<td>
+				<span style="white-space:nowrap;"><input class="date widget" name="CLAIM_SUBSCRIBERXSUBSCRIBER_DOB" id="CLAIM_SUBSCRIBERXSUBSCRIBER_DOB" maxlength="10" size="10" type="text"></span><img src="dental_files/HelpButton.gif" alt="mm/dd/yyyy" title="mm/dd/yyyy" align="middle" border="0" width="18" height="18" hspace="2"><input name=":CLAIM_SUBSCRIBERXSUBSCRIBER_DOB:required_edit::" type="hidden">
+			</td>
+			<td colspan="2" style="text-align:right;" nowrap="nowrap">
+				<span title="CLAIM_SUBSCRIBER, SUBSCRIBER_ID_CODE"><label for="CLAIM_SUBSCRIBERXSUBSCRIBER_ID_CODE">Member Number</label></span>
+				<input class="widget" name="CLAIM_SUBSCRIBERXSUBSCRIBER_ID_CODE" id="CLAIM_SUBSCRIBERXSUBSCRIBER_ID_CODE" maxlength="50" size="16" type="text"><img src="dental_files/HelpButton.gif" alt="123456" title="123456" align="middle" border="0" width="18" height="18" hspace="2">
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:right;"><span title="CLAIM_SUBSCRIBER, SUBSCRIBER_LAST_NAME"><label for="CLAIM_SUBSCRIBERXSUBSCRIBER_LAST_NAME">Member Last Name</label></span></td>
+			<td>
+				<input class="widget" name="CLAIM_SUBSCRIBERXSUBSCRIBER_LAST_NAME" id="CLAIM_SUBSCRIBERXSUBSCRIBER_LAST_NAME" maxlength="75" size="16" type="text">
+			</td>
+			<td colspan="2" style="text-align:right;" nowrap="nowrap">
+				<span title="CLAIM_SUBSCRIBER, SUBSCRIBER_FIRST_NAME"><label for="CLAIM_SUBSCRIBERXSUBSCRIBER_FIRST_NAME">Member First Name</label></span>
+				<input class="widget" name="CLAIM_SUBSCRIBERXSUBSCRIBER_FIRST_NAME" id="CLAIM_SUBSCRIBERXSUBSCRIBER_FIRST_NAME" maxlength="30" size="16" type="text">
+			</td>
+		</tr>
+		<tr>
+			<td><label class="label">&nbsp;</label></td>
+			<td colspan="3" style="padding:1px 0px 1px 0px;">
+				<table style="display:block; width:24em;" cellpadding="0" cellspacing="0" width="100%"> 
+					<tbody><tr>
+						<td style="text-align:center;">
+							<input id="search_member" value="Search" type="submit">
+							<input id="clear_member" value="Clear" type="submit">
+						</td>
+					</tr>
+				 </tbody></table>
+			</td>
+		</tr>
+	</tbody></table>
+		
+	
+		
+	</div>		
+</fieldset>
+
+
+	<br>
+	<table class="pcontenttableborder" cellspacing="0" width="100%"><tbody><tr><td>You have 2 Search Options: To Search by Distance or by Area. <br>
+To use Distance, please enter an address with a zip code and choose Miles Willing to Travel greater than or equal to 1 mile.  <br>
+To use Area, please enter your State, pick a County, and set Miles Willing to Travel to --.</td></tr></tbody></table>
+	<fieldset id="geographic_panel">
+		<legend id="geoSection" class="searchtitle_expand"><span title="PROVIDER, SECTION_GEOGRAPHIC"><label for="PROVIDERXSECTION_GEOGRAPHIC">Enter Your Geographic Area</label></span></legend>
+		<table summary="This table allows you to search for a provider" class="panel toggle_container" cellspacing="0">
+			<tbody>
+	        	<tr>
+					<td class="labelcell"><span title="LOCATION, ADDRESS"><label for="LOCATIONXADDRESS">Address</label></span></td>
+					<td class="valuecell"><input class="" name="LOCATIONXADDRESS" id="LOCATIONXADDRESS" maxlength="60" size="50" type="text"><img src="dental_files/HelpButton.gif" alt="Street address portion of subject's mailing address. Field should not exceed 60 characters." title="Street address portion of subject's mailing address. Field should not exceed 60 characters." align="middle" border="0" width="18" height="18" hspace="2"></td>
+				</tr>
+	          	<tr>
+					<td class="labelcell"><span title="LOCATION, CITY"><label for="LOCATIONXCITY">City</label></span></td>
+					<td class="valuecell"><input class="" name="LOCATIONXCITY" id="LOCATIONXCITY" maxlength="40" size="50" type="text"></td>
+				</tr>
+				<tr>
+					<td class="labelcell"><span title="LOCATION, STATE"><label for="LOCATIONXSTATE">State</label></span></td>
+					<td class="valuecell"><select name="LOCATIONXSTATE" class="" id="LOCATIONXSTATE"><option value="" selected="selected"></option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="NL">Newfoundland and Labrador</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option></select><img src="dental_files/HelpButton.gif" alt="State in which the subject resides or is located. Select from dropdown menu." title="State in which the subject resides or is located. Select from dropdown menu." align="middle" border="0" width="18" height="18" hspace="2"></td>
+				</tr>
+	            <tr>
+	                <td class="labelcell"><span title="LOCATION, COUNTY"><label for="LOCATIONXCOUNTY">County</label></span></td>
+	                <td class="valuecell"><select name="LOCATIONXCOUNTY" class="" id="LOCATIONXCOUNTY"><option selected="selected" value=""></option></select></td>
+	           	</tr>
+	            <tr>
+	                <td class="labelcell">&nbsp;</td>
+	                <td class="valuecell"><b>-OR-</b></td>
+	            </tr>
+	            <tr>
+					<td class="labelcell"><span title="LOCATION, ZIP_CODE"><label for="LOCATIONXZIP_CODE">Zip Code</label></span></td>
+					<td class="valuecell"><input class="" name="LOCATIONXZIP_CODE" id="LOCATIONXZIP_CODE" value="01453" maxlength="10" size="10" type="text"><img src="dental_files/HelpButton.gif" alt="USPS mail code for subject's address or location. Field should not exceed 9 characters." title="USPS mail code for subject's address or location. Field should not exceed 9 characters." align="middle" border="0" width="18" height="18" hspace="2"></td>
+				</tr>
+	            <tr>
+	                <td class="labelcell"><span title="PROVIDER, DISTANCE"><label for="PROVIDERXDISTANCE">Miles Willing to Travel</label></span></td>
+	                <td class="valuecell"><select name="PROVIDERXDISTANCE" class="" id="PROVIDERXDISTANCE"><option value="0">--</option><option value="1">1</option><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option><option value="30" selected="selected">30</option><option value="50">50</option><option value="100">100</option><option value="120">120</option></select><img src="dental_files/HelpButton.gif" alt="Indicates how far from the specified address  or    zip code to search for a dentist." title="Indicates how far from the specified address  or    zip code to search for a dentist." align="middle" border="0" width="18" height="18" hspace="2"> (If you do not have a zip code, then set the Miles Willing to Travel to --)</td>
+	       		</tr>
+			</tbody>
+		</table>
+	</fieldset>
+	
+  	<br>
+  	
+	<fieldset id="provider_panel">
+	<legend id="addtlProvSection" class="searchtitle_expand"><span title="PROVIDER, SECTION_ADDTL_PROVIDER_INFO"><label for="PROVIDERXSECTION_ADDTL_PROVIDER_INFO">Optional - Provider Search Criteria</label></span></legend>
+	    <table summary="This table allows you to search for a provider" class="panel toggle_container" cellspacing="0">
+	    	<tbody>
+	    	 	<tr>
+	        		<td class="labelcell"></td>
+	            	<td class="valuecell"></td>
+		        </tr>
+		    	<tr>
+		        	<td class="labelcell"><span title="PROVIDER, LAST_NAME"><label for="PROVIDERXLAST_NAME">Dentist Last Name/Office Name</label></span></td>
+		            <td class="valuecell"><input class="" name="PROVIDERXLAST_NAME" id="PROVIDERXLAST_NAME" maxlength="75" size="50" type="text"><img src="dental_files/HelpButton.gif" alt="Subject's last name. Field should not exceed 75 characters." title="Subject's last name. Field should not exceed 75 characters." align="middle" border="0" width="18" height="18" hspace="2"></td>
+		        </tr>
+		        <tr>
+		            <td class="labelcell"><span title="PROVIDER, FIRST_NAME"><label for="PROVIDERXFIRST_NAME">Dentist First Name</label></span></td>
+		           	<td class="valuecell"><input class="" name="PROVIDERXFIRST_NAME" id="PROVIDERXFIRST_NAME" maxlength="30" size="24" type="text"><img src="dental_files/HelpButton.gif" alt="Subject's first name. Field should not exceed 30 characters." title="Subject's first name. Field should not exceed 30 characters." align="middle" border="0" width="18" height="18" hspace="2"></td>
+		        </tr>
+		        <tr>
+		            <td class="labelcell"></td>
+		            <td class="valuecell"></td>
+		        </tr>
+		        <tr>
+					<td class="labelcell"><span title="PROVIDER, GENDER"><label for="PROVIDERXGENDER">Gender</label></span></td>
+		           	<td class="valuecell"><select name="PROVIDERXGENDER" class="" id="PROVIDERXGENDER"><option value="" selected="selected"></option><option value="F">FEMALE</option><option value="M">MALE</option><option value="U">UNKNOWN</option></select></td>
+				</tr>
+		        <tr>
+	                <td class="labelcell"><span title="PROVIDER_SPECIALTY, PROVIDER_TAXONOMY"><label for="PROVIDER_SPECIALTYXPROVIDER_TAXONOMY">Specialty</label></span></td>
+					<td class="valuecell"> <select name="PROVIDER_SPECIALTYXPROVIDER_TAXONOMY" class="" id="PROVIDER_SPECIALTYXPROVIDER_TAXONOMY"><option value="" selected="selected"></option><option value="71">Anesthesiology</option><option value="91">Denturist</option><option value="15">Dentist -Endodontics</option><option value="00">General Practitioner</option><option value="92">Dental Hygienist</option><option value="60">Dentist -Oral And Maxillofacial Pathology</option><option value="74">Dentist -Oral And Maxillofacial Radiology</option><option value="10">Dentist -Oral And Maxillofacial Surgery</option><option value="20">Dentist -Orthodontics And Dentofacial Orthopedics</option><option value="30">Dentist -Pediatric Dentistry</option><option value="40">Dentist -Periodontics</option><option value="50">Dentist -Prosthodontics</option></select></td>
+	           	</tr>
+	            <tr>
+	                 <td class="labelcell"><span title="PROVIDER_LANGUAGE, LANGUAGE_CODE"><label for="PROVIDER_LANGUAGEXLANGUAGE_CODE">Language</label></span></td>
+	                 <td class="valuecell"><select name="PROVIDER_LANGUAGEXLANGUAGE_CODE" class="" id="PROVIDER_LANGUAGEXLANGUAGE_CODE"><option value="" selected="selected"></option><option value="AKA">Akan</option><option value="ALB">Albanian</option><option value="ARA">Arabic</option><option value="ARM">Armenian</option><option value="BEN">Bengali</option><option value="BOS">Bosnian</option><option value="BUL">Bulgarian</option><option value="BUR">Burmese</option><option value="CAMBO">Khmer</option><option value="NYA">Chichewa; Chewa; Nyanja</option><option value="CHI">Chinese</option><option value="CPE">Creoles and pidgins, English based (Other)</option><option value="SCR">Croatian</option><option value="CZE">Czech</option><option value="DAN">Danish</option><option value="DUT">Dutch; Flemish</option><option value="EGY">Egyptian (Ancient)</option><option value="ENG">English</option><option value="FRE">French</option><option value="GER">German</option><option value="GEM">Germanic (Other)</option><option value="GRE">Greek, Modern (1453-)</option><option value="GUJ">Gujarati</option><option value="HEB">Hebrew</option><option value="HIN">Hindi</option><option value="HMN">Hmong</option><option value="HUN">Hungarian</option><option value="ITA">Italian</option><option value="JPN">Japanese</option><option value="KAN">Kannada</option><option value="KOR">Korean</option><option value="LAO">Lao</option><option value="LAT">Latin</option><option value="LAV">Latvian</option><option value="LIT">Lithuanian</option><option value="MAL">Malayalam</option><option value="NAV">Navajo; Navaho</option><option value="NEP">Nepali</option><option value="PAN">Panjabi; Punjabi</option><option value="PER">Persian</option><option value="PHI">Philippine (Other)</option><option value="POL">Polish</option><option value="POR">Portuguese</option><option value="PUS">Pushto; Pashto</option><option value="RUM">Romanian</option><option value="RUS">Russian</option><option value="SCC">Serbian</option><option value="SGN">Sign Languages</option><option value="SLA">Slavic (Other)</option><option value="SOM">Somali</option><option value="SPA">Spanish; Castilian</option><option value="SWA">Swahili</option><option value="SWE">Swedish</option><option value="TGL">Tagalog</option><option value="TAI">Tai (Other)</option><option value="TAM">Tamil</option><option value="TEL">Telugu</option><option value="THA">Thai</option><option value="TUR">Turkish</option><option value="UKR">Ukrainian</option><option value="URD">Urdu</option><option value="UZB">Uzbek</option><option value="VIE">Vietnamese</option><option value="YID">Yiddish</option><option value="YOR">Yoruba</option></select></td>
+	            </tr>
+	             <tr>
+	                 <td class="labelcell"><span title="PROVIDER, SPECIAL_NEEDS_YESNO"><label for="PROVIDERXSPECIAL_NEEDS_YESNO">Special Needs</label></span></td>
+	                    <td class="valuecell"><input name="PROVIDERXSPECIAL_NEEDS_YESNO" class="submit-checked " id="PROVIDERXSPECIAL_NEEDS_YESNO" value="Y" type="checkbox"></td>
+	             </tr>
+	             <tr>
+	                 <td class="labelcell"><span title="LOCATION, HANDICAP_SUPPORT"><label for="LOCATIONXHANDICAP_SUPPORT">Handicap Accessible</label></span></td>
+	                <td class="valuecell"><input name="LOCATIONXHANDICAP_SUPPORT" class="submit-checked " id="LOCATIONXHANDICAP_SUPPORT" value="Y" type="checkbox"></td>
+	             </tr>
+		        <tr>
+	            	<td class="labelcell"><span title="LOCATION, CONTACT_PHONE"><label for="LOCATIONXCONTACT_PHONE">Contact Phone</label></span></td>
+	            	<td class="valuecell"><input class="" name="LOCATIONXCONTACT_PHONE" id="LOCATIONXCONTACT_PHONE" maxlength="50" size="50" type="text"></td>
+	    	    </tr>            
+	      	</tbody>
+	   	</table>
+   	</fieldset>
+   	
+    <table summary="This table holds buttons" class="searchbuttons" cellspacing="0">
+		<tbody><tr>
+			<td>
+				
+					<input name="Search" id="Search" value="Search" type="submit">
+				
+				
+					
+				
+			</td>
+		</tr>
+	</tbody></table>
+</form>
+
+
+
+		<div class="footer headerWidth"></div>
+						<div class="copy" id="simplefooter">
+							<br>
+							X03_90_07_C26
+							<br>
+							<table class="pcontenttableborder" cellspacing="0" width="100%"><tbody><tr><td><center>Current Dental Terminology © American Dental Association</center>
+<br>
+<center>Copyright © 2013 Commonwealth of Massachusetts
+</center></td></tr></tbody></table>
+						</div>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	
+
+
+
+</body></html>
